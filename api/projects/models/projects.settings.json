@@ -40,6 +40,10 @@
     },
     "created_at": {
       "type": "string"
+    },
+    "repo_url": {
+      "type": "string",
+      "required": true
     }
   }
 }
