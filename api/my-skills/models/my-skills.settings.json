@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "my_skills",
+  "info": {
+    "name": "MySkills",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "skil_uid": {
+      "type": "uid",
+      "required": true,
+      "targetField": "skill"
+    },
+    "skill": {
+      "type": "string",
+      "required": true
+    },
+    "im_skill": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}
