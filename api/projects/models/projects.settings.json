@@ -38,11 +38,12 @@
       "type": "string",
       "required": true
     },
-    "created_at": {
-      "type": "string"
-    },
     "repo_url": {
       "type": "string",
+      "required": true
+    },
+    "fecha_inicio": {
+      "type": "date",
       "required": true
     }
   }
